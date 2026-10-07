@@ -1,0 +1,16 @@
+{"q": "How long are backups of the orders database kept?", "tenant": "larkspur", "doc": "larkspur/backups.md", "section": "Schedule"}
+{"q": "How do I restore the orders database to a point in time?", "tenant": "larkspur", "doc": "larkspur/backups.md", "section": "Restore"}
+{"q": "How do I check that a restore worked?", "tenant": "larkspur", "doc": "larkspur/backups.md", "section": "Restore validation"}
+{"q": "What does ERR_4021 mean?", "tenant": "larkspur", "doc": "larkspur/incidents.md", "section": "Error codes"}
+{"q": "inventory service timed out ERR_5003", "tenant": "larkspur", "doc": "larkspur/incidents.md", "section": "Error codes"}
+{"q": "Who do we page for a SEV1?", "tenant": "larkspur", "doc": "larkspur/incidents.md", "section": "Severity levels"}
+{"q": "How often should we post incident updates?", "tenant": "larkspur", "doc": "larkspur/incidents.md", "section": "Communication"}
+{"q": "How do I rotate the database password early?", "tenant": "larkspur", "doc": "larkspur/credentials.md", "section": "Database passwords"}
+{"q": "Can I create a service account key?", "tenant": "larkspur", "doc": "larkspur/credentials.md", "section": "Service accounts"}
+{"q": "Can we deploy to production on a Friday?", "tenant": "larkspur", "doc": "larkspur/deploys.md", "section": "Release windows"}
+{"q": "How do I roll back a Cloud Run deploy?", "tenant": "larkspur", "doc": "larkspur/deploys.md", "section": "Rollback"}
+{"q": "What percentage of traffic does a canary start with?", "tenant": "larkspur", "doc": "larkspur/deploys.md", "section": "Canary"}
+{"q": "How long are Harbor backups kept?", "tenant": "harbor", "doc": "harbor/onboarding.md", "section": "Backups"}
+{"q": "When does the on-call rotation change?", "tenant": "harbor", "doc": "harbor/oncall.md", "section": "Rotation"}
+{"q": "What goes in the on-call handover note?", "tenant": "harbor", "doc": "harbor/oncall.md", "section": "Handover"}
+{"q": "When do new engineers get production write access?", "tenant": "harbor", "doc": "harbor/onboarding.md", "section": "First week"}
