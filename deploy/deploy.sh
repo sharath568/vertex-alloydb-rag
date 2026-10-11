@@ -10,6 +10,7 @@ set -euo pipefail
 
 PROJECT_ID="${PROJECT_ID:?set PROJECT_ID}"
 REGION="${REGION:-us-central1}"
+GEMINI_LOCATION="${GEMINI_LOCATION:-global}"   # Gemini 3.5 is served from global only; AlloyDB/Cloud Run stay in REGION
 CLUSTER="${CLUSTER:-rag-cluster}"
 INSTANCE="${INSTANCE:-rag-primary}"
 NETWORK="${NETWORK:-default}"
@@ -70,7 +71,7 @@ COMMON_FLAGS=(
   --region="$REGION" --service-account="$SA"
   --network="$NETWORK" --subnet=default --vpc-egress=private-ranges-only
   --set-secrets=DATABASE_URL=rag-database-url:latest
-  --set-env-vars=GOOGLE_GENAI_USE_VERTEXAI=true,GOOGLE_CLOUD_PROJECT="$PROJECT_ID",GOOGLE_CLOUD_LOCATION="$REGION",ALLOYDB=true
+  --set-env-vars=GOOGLE_GENAI_USE_VERTEXAI=true,GOOGLE_CLOUD_PROJECT="$PROJECT_ID",GOOGLE_CLOUD_LOCATION="$GEMINI_LOCATION",ALLOYDB=true
 )
 
 echo "== 6. Ingest job (creates schema + ScaNN index, embeds data/docs)"
